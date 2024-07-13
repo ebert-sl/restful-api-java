@@ -14,11 +14,7 @@ classDiagram
 
     class Post {
         - String content
-        - List~Comment~ comments
-        - List~Like~ likes
     }
     
     User "1" --> "0..*" Post : creates
-    Post "1" --> "0..*" Comment : contains
-    Post "1" --> "0..*" Like : receives
 ```
